@@ -1,0 +1,7 @@
+{
+  "name": "oxi_map",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
