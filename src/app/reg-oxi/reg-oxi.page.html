@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>FIND REGISTER</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card color="tertiary">
+  <ion-card-header class="text-center">
+    <ion-card-title  >Findme Register</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <form (ngSubmit)="SaveForm()"  >
+      <ion-list class="item-margin">
+        <ion-item class="item-padding" >
+          <ion-label color="primary" position="floating" >Nombres</ion-label>
+          <ion-input name="names"  [(ngModel)]="form.names"></ion-input>
+          <ion-icon name="person-circle-outline"  color="primary" slot="end" class="ion-align-self-center"></ion-icon>
+        </ion-item>
+      </ion-list>
+      <ion-list class="item-margin">
+      <ion-item >
+        <ion-label color="primary" position="floating">Avatar</ion-label>
+        <ion-input name="avatar" [(ngModel)]="form.avatar" ></ion-input>
+        <ion-icon name="happy-outline"  color="primary" slot="end" class="ion-align-self-center"></ion-icon>
+      </ion-item>
+    </ion-list>
+      <ion-list class="item-margin">
+        <ion-item (click)="showMap()">
+          <ion-label color="primary" position="fixed" slot="start">Posicion</ion-label>
+          <ion-icon name="locate-outline" color="primary" slot="end" class="ion-align-self-center"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-label color="primary" position="fixed">Lat:</ion-label>
+          <ion-input readonly="true" placeholder="Latitud"  name="latitud" [(ngModel)]="form.lat"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="primary" position="fixed">Lng:</ion-label>
+          <ion-input readonly="true" placeholder="Longitud" name="longitud"  [(ngModel)]="form.lng"></ion-input>
+        </ion-item>
+      </ion-list>     
+          <ion-button  type="submit" expand="block" color="dark" size="large">Save</ion-button>
+ </form>
+  </ion-card-content>
+</ion-card>
+</ion-content>

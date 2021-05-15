@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { appStorageServices } from '../services/app.storage.services';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
-
+  constructor(private router:Router,private _storageServices:appStorageServices) {
+    
+  }
+      goMap(){
+        this.router.navigate(['/oximap']);
+      }
+      goRegister(){
+        this.router.navigate(['/reg-oxi']);
+      }
 }

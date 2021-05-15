@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>FINDMAP</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div *ngIf="verificarId;else NohayMap " #findMap class="findMap"></div>
+  <ng-template #NohayMap class="text-center">
+    <h3>No puedes ver el MAPA / Debes de Registrarte</h3>
+  </ng-template>
+  <ion-button (click)="DrawRoute()" expand="block" color="dark" size="large">Trazar Ruta</ion-button>
+
+ </ion-content>

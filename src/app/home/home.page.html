@@ -1,20 +1,24 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>FINDME APP</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card (click)="goMap()">
+      <ion-item>
+          <ion-img style="max-height:20vh " src="https://i.blogs.es/023399/googlemapstimeline/450_1000.jpg"></ion-img>      
+      </ion-item>
+    <ion-card-header>
+      <ion-card-title class="text-center">FINDME MAP</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+  <ion-card (click)="goRegister()">
+    <ion-item>
+      <ion-img  class="height-img" src="https://i.pinimg.com/originals/9b/3c/ef/9b3cef596ae80e68281e7da2b37c5ae7.png"></ion-img>      
+  </ion-item>
+    <ion-card-header>
+      <ion-card-title class="text-center">FINDME REGISTER</ion-card-title>
+    </ion-card-header>
+  </ion-card>
 </ion-content>

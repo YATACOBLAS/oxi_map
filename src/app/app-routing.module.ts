@@ -11,6 +11,16 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'oximap',
+    loadChildren: () => import('./oximap/oximap.module').then( m => m.OximapPageModule)
+  },
+  {
+    path: 'reg-oxi',
+    loadChildren: () => import('./reg-oxi/reg-oxi.module').then( m => m.RegOxiPageModule)
+  },
+
+
 ];
 
 @NgModule({
