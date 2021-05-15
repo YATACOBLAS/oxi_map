@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 //para que no halla error al compilar la aplicacion
 declare var google:any;
 @Injectable({
@@ -6,7 +7,7 @@ declare var google:any;
 })
 export class AppMapServices {
 
-  apikey='AIzaSyC7llAR9lRjVud76kKQRVYH1FocrtwZ9bM';
+  apikey= environment.key;
   //para verificar si el mapa esta cargado o no 
   mapsLoaded=false;
 

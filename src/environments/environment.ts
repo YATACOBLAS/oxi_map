@@ -11,7 +11,8 @@ export const environment = {
     storageBucket: "omega-scope-283806.appspot.com",
     messagingSenderId: "256779455956",
     appId: "1:256779455956:web:73158147962a05c50c9a41"
-  }
+  },
+  key:'AIzaSyC7llAR9lRjVud76kKQRVYH1FocrtwZ9bM'
 };
 
 /*
